@@ -32,31 +32,31 @@ public class Main {
         human1.mother = new Human();
         human1.father = new Human();
         human1.mother.name="Natasha";
-        human1.name="Sasha";
+        human1.name="Alina";
         human1.age=25;
         human1.sex="male";
         human1.father.name="Pavel";
-
-        Human human2 = new Human();
+        human1.mother.age=56;
+        human1.mother.sex="female";
+        /*Human human2 = new Human();
         human2.mother = new Human();
         human2.father = new Human();
         human2.name="Misha";
         human2.sex="male";
         human2.age=34;
-        human2.mother.name="Nastya";
-        human2.father.name="Sasha";
+        //human2.mother.name="Nastya";
+        //human2.father.name="Sasha";*/
 
         Human human3 = new Human();
         human3.mother = new Human();
         human3.father = new Human();
         human3.name = "Nastya";
         human3.sex="female";
-        human3.age=35;
-        human3.father.name = "Konstantin";
-        human3.mother.name = "Aleksandra";
+        human3.age=3;
+        human3.father.name = "Misha";
+        human3.mother.name = "Alina";
 
         System.out.println(human1);
-        System.out.println(human2);
         System.out.println(human3);
     }
 }
