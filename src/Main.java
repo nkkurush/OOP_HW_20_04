@@ -59,4 +59,50 @@ public class Main {
         System.out.println(human1);
         System.out.println(human3);
     }
+    public class Basket {
+        Basket[] buy_goods = new Basket[5];
+
+    }
+    public class Category {
+        String name;
+        Goods[] goods = new Goods[10];
+        Category category1 = new Category();
+        Category category2 = new Category();
+    }
+    public class Goods {
+        String name;
+        int cost,rating;
+
+    }
+    public class User {
+        String login,password;
+        Basket basket = new Basket();
+        User user = new User();
+    }
+    //Task2 2
+    public class Person {
+        /*
+            переменные fullName, age;
+            методы move() и talk(), в которых просто вывести на консоль сообщение -"Такой-то  Person говорит".
+            Добавьте два конструктора  - Person() и Person(fullName, age).
+            Создайте два объекта этого класса. Один объект инициализируется конструктором Person(), другой - Person(fullName, age).
+        */
+        String fullName;
+        int age;
+
+        public Person(){}
+        public Person(String fullName,int age){
+            this.fullName=fullName;
+            this.age=age;
+        }
+
+        public void talk(){
+            System.out.println(this.fullName  + " говорит");
+        }
+        public void move(){
+            System.out.println(this.fullName + " двигается");
+        }
+        Person person1 = new Person();
+        Person person2 = new Person("Иванов Иван",25);
+    }
 }
